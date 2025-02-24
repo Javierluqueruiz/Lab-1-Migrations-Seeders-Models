@@ -26,6 +26,10 @@ const _getDatabaseConnectionProperties = () => {
   const databaseUsername = process.env.DATABASE_USERNAME
   const databasePassword = process.env.DATABASE_PASSWORD
   const databaseName = process.env.DATABASE_NAME
+
+  console.log('DATABASE CONNECTION CONFIGURATION:')
+  console.log({ databaseHost, databasePort, databaseUsername, databasePassword, databaseName })
+
   return { databaseName, databaseUsername, databasePassword, databaseHost, databasePort }
 }
 
